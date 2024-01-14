@@ -92,10 +92,10 @@ function Detailproduit(){
                     </div>
 
                     <div className = "purchase-info">
-                            <button type = "button" className = "btn">
-                                Contactez <i class = "fas fa-shopping-cart"></i>
-                            </button>
-                            <button type = "button" class = "btn">Envoyez message</button>
+                            <Link type = "button" className = "btn">
+                                Contactez
+                            </Link>
+                            <Link type = "button" class = "btn">Envoyez message</Link>
                     </div>
 
                     <div className = "social-links">
