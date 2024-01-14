@@ -43,31 +43,31 @@ function Detailproduit(){
                 <div className="product-imgs">
                     <div className="img-display">
                         <div className="img-showcase">
-                            <img src={voiture} alt={"shoe image"} />
-                            <img src={voiture} alt={"shoe image"} />
-                            <img src={voiture} alt={"shoe image"} />
-                            <img src={voiture} alt={"shoe image"} />
+                            <img src={voiture}/>
+                            <img src={voiture}/>
+                            <img src={voiture}/>
+                            <img src={voiture}/>
                         </div>
                     </div>
                     <div className="img-select">
                         <div className="img-item">
                             <Link to="/" data-id="1">
-                                <img src={voiture} alt={"shoe image"} />
+                                <img src={voiture}/>
                             </Link>
                         </div>
                         <div className="img-item">
                             <Link to="/" data-id="2">
-                                <img src={voiture} alt={"shoe image"} />
+                                <img src={voiture}/>
                             </Link>
                         </div>
                         <div className="img-item">
                             <Link to="/" data-id="3">
-                                <img src={voiture} alt={"shoe image"} />
+                                <img src={voiture}/>
                             </Link>
                         </div>
                         <div className="img-item">
                             <Link to="/" data-id="4">
-                                <img src={voiture} alt={"shoe image"} />
+                                <img src={voiture}/>
                             </Link>
                         </div>
                     </div>
