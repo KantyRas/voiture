@@ -21,14 +21,13 @@ function Header () {
                             <Link className="nav-link active" aria-current="page" to="/">Vendre</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" to="/">Toutes les marques</Link>
+                            <Link className="nav-link active" aria-current="page" to="/favoris">Mes favoris</Link>
                         </li>
-
+                        <li className="nav-item">
+                            <Link className="nav-link active" aria-current="page" to="/historiques">Mon historique</Link>
+                        </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    <Link className="nav-link active" aria-current="page" to="/">Messages <span style={{color: "red"}}>1</span></Link>
                 </div>
             </div>
         </nav>
