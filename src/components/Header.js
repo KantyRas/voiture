@@ -1,8 +1,13 @@
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {Link} from "react-router-dom";
-function Header () {
-    return(
+import { Link } from "react-router-dom";
+
+function Header() {
+
+    const logout = () => {
+        window.localStorage.removeItem("token");
+    };
+    
+
+    return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
                 <Link className="navbar-brand" to="/">Voiture</Link>
@@ -27,10 +32,14 @@ function Header () {
                             <Link className="nav-link active" aria-current="page" to="/historiques">Mon historique</Link>
                         </li>
                     </ul>
+                   
+                        <Link to="/login" className="btn btn-link nav-link active" onClick={logout}>Logout</Link>
+
                     <Link className="nav-link active" aria-current="page" to="/">Messages <span style={{color: "red"}}>1</span></Link>
                 </div>
             </div>
         </nav>
     );
 }
+
 export default Header;
