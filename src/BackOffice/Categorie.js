@@ -16,7 +16,7 @@ export default function Categorie(){
                         console.error('Error fetching categories:', error);
                     });
             }
-        }, [token]);
+        }, []);
 
 
     return(
