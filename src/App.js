@@ -18,6 +18,7 @@ function App() {
         <Router>
             <Routes>
                 <Route path="/login/email=test@gmail.com/mdp=0000" element={<Login />} />
+                
                 <Route path="/" element={<Navigate to="/login/email=test@gmail.com/mdp=0000" />} />
                 <Route path="/details" element={<Detail />} />
                 <Route path="/home" element={<Home />} />
