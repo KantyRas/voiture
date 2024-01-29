@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 
 function Header() {
 
-    const logout = () => {
+
+    let logout = () => {
         window.localStorage.removeItem("token");
+        //history.push("/"); // Redirection vers la page d'accueil après déconnexion
     };
     
 
@@ -33,7 +35,7 @@ function Header() {
                         </li>
                     </ul>
                    
-                        <Link to="/login" className="btn btn-link nav-link active" onClick={logout}>Logout</Link>
+                        <Link to="/" className="btn btn-link nav-link active" onClick={logout}>Logout</Link>
 
                     <Link className="nav-link active" aria-current="page" to="/">Messages <span style={{color: "red"}}>1</span></Link>
                 </div>
