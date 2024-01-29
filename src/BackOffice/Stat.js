@@ -3,7 +3,7 @@ import axios from "axios";
 
 export default function Stat() {
     const [statistiques, setStatistiques] = useState([]);
-
+/*nisy modif*/
     useEffect(() => {
         const token = localStorage.getItem("token");
         if (token) {
