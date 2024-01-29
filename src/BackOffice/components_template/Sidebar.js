@@ -33,11 +33,11 @@ export default function Sidebar(){
                         </li>
 
                         <li className="sidebar-item">
-                            <Link className="sidebar-link" to="/" aria-expanded="false">
+                            <Link className="sidebar-link" to="/categories" aria-expanded="false">
                 <span>
                   <i className="ti ti-user-minus"></i>
                 </span>
-                                <span className="hide-menu">Details activites</span>
+                                <span className="hide-menu">Catégorie</span>
                             </Link>
                         </li>
                         <li className="sidebar-item">
