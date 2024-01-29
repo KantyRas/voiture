@@ -1,30 +1,30 @@
 import React, { useState } from "react";
 
-export default function AjoutCategorie() {
-    const [categorie, setCategorie] = useState('');
+export default function AjoutMarque() {
+    const [marque, setMarque] = useState('');
 
     const handleClick = async (e) => {
         e.preventDefault();
         const token = localStorage.getItem("token");
         if (token) {
             try {
-                const response = await fetch("https://voiture-backend-production.up.railway.app/inserer_categorie", {
+                const response = await fetch("https://voiture-backend-production.up.railway.app/inserer_marque", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
                         "Authorization": `Bearer ${token}`
                     },
-                    body: JSON.stringify({ categorie })
+                    body: JSON.stringify({ marque })
                 });
                 if (response.ok) {
-                    console.log("Ajout de la catégorie réussi !");
+                    console.log("Ajout de la marque réussi !");
                     // Réinitialiser le champ de saisie après l'ajout réussi
-                    setCategorie('');
+                    setMarque('');
                 } else {
-                    console.error("Erreur lors de l'ajout de la catégorie :", response.statusText);
+                    console.error("Erreur lors de l'ajout de la marque :", response.statusText);
                 }
             } catch (error) {
-                console.error("Erreur lors de l'ajout de la catégorie :", error);
+                console.error("Erreur lors de l'ajout de la marque :", error);
             }
         }
     }
@@ -32,8 +32,8 @@ export default function AjoutCategorie() {
     return (
         <form className="row g-3">
             <div className="article-entry col-md-3 mt-3">
-                <label htmlFor="categorie" className="form-label">Catégorie</label>
-                <input type="text" className="form-control" name="categorie" value={categorie} onChange={(e) => setCategorie(e.target.value)} />
+                <label htmlFor="marque" className="form-label">Marque</label>
+                <input type="text" className="form-control" name="marque" value={marque} onChange={(e) => setMarque(e.target.value)} />
             </div>
 
             <div className="col-12 mt-3">

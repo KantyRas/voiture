@@ -26,7 +26,7 @@ export default function Marque(){
     return (
         <>
             <>
-                <Link to="/ajout_categorie" className="btn btn-primary">
+                <Link to="/ajout_marque" className="btn btn-primary">
                     ajout marque
                 </Link>
             </>
@@ -42,10 +42,10 @@ export default function Marque(){
                     </tr>
                     </thead>
                     <tbody>
-                    {Marques.map(marque => (
-                        <tr key={marque.idmarque}>
-                            <th scope="row">{marque.idmarque}</th>
-                            <td>{marque.Marque}</td>
+                    {Marques.map(ss => (
+                        <tr key={ss.idmarque}>
+                            <th scope="row">{ss.idmarque}</th>
+                            <td>{ss.marque}</td>
                             <td></td>
                             <td></td>
                         </tr>

@@ -49,11 +49,11 @@ export default function Sidebar(){
                             </Link>
                         </li>
                         <li className="sidebar-item">
-                            <Link className="sidebar-link" to="/" aria-expanded="false">
+                            <Link className="sidebar-link" to="/validation" aria-expanded="false">
                 <span>
                   <i className="ti ti-brand-producthunt"></i>
                 </span>
-                                <span className="hide-menu">Vente</span>
+                                <span className="hide-menu">Validation annonce</span>
                             </Link>
                         </li>
                         <li className="nav-small-cap">
@@ -66,28 +66,7 @@ export default function Sidebar(){
                         <span>
                   <i className="ti ti-pig-money"></i>
                 </span>
-                                <span className="hide-menu">Activites</span>
-                            </Link>
-                        </li>
-                        <li className="sidebar-item">
-                            <Link className="sidebar-link" to="/" aria-expanded="false">
-                <span>
-                  <i className="ti ti-cards"></i>
-                </span>
-                                <span className="hide-menu">Type voyage</span>
-                            </Link>
-                        </li>
-
-                        <li className="nav-small-cap">
-                            <i className="ti ti-dots nav-small-cap-icon fs-4"></i>
-                            <span className="hide-menu">DIVERS</span>
-                        </li>
-                        <li className="sidebar-item">
-                            <Link className="sidebar-link" to="/" aria-expanded="false">
-                <span>
-                  <i className="ti ti-checklist"></i>
-                </span>
-                                <span className="hide-menu">Voir benefice</span>
+                                <span className="hide-menu">Statistiques</span>
                             </Link>
                         </li>
                     </ul>
