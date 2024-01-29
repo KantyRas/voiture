@@ -4,6 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCube,faBell,faUser,faMailBulk,faListCheck} from "@fortawesome/free-solid-svg-icons";
 
 export default function HeaderAdmin(){
+    let logout = () => {
+        window.localStorage.removeItem("token");
+        //history.push("/"); // Redirection vers la page d'accueil après déconnexion
+    };
     return(
         <header className="app-header">
             <nav className="navbar navbar-expand-lg navbar-light">
@@ -41,7 +45,7 @@ export default function HeaderAdmin(){
                                         <FontAwesomeIcon icon={faListCheck}/>
                                         <p className="mb-0 fs-3">My Task</p>
                                     </Link>
-                                    <Link to="/" className="btn btn-outline-primary mx-3 mt-2 d-block">Logout</Link>
+                                    <Link to="/" onClick={logout} className="btn btn-outline-primary mx-3 mt-2 d-block">Logout</Link>
                                 </div>
                             </div>
                         </li>

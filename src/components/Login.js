@@ -21,7 +21,7 @@ function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:8080/api/auth/authenticate", { email, password });
+            const response = await axios.post("https://voiture-backend-production.up.railway.app/api/auth/authenticate", { email, password });
             localStorage.setItem("token", response.data.token);
             setIsLoggedIn(true);
         } catch (err) {
@@ -31,7 +31,7 @@ function Login() {
 
     if (isLoggedIn) {
         // Utilisez Navigate pour rediriger après une connexion réussie
-        return <Navigate to="/home" replace />;
+        return <Navigate to="/acceuil" replace />;
     }
 
     return (
