@@ -41,11 +41,11 @@ export default function Sidebar(){
                             </Link>
                         </li>
                         <li className="sidebar-item">
-                            <Link className="sidebar-link" to="" aria-expanded="false">
+                            <Link className="sidebar-link" to="/marques" aria-expanded="false">
                 <span>
                   <i className="ti ti-brand-producthunt"></i>
                 </span>
-                                <span className="hide-menu">Statistiques</span>
+                                <span className="hide-menu">Marque</span>
                             </Link>
                         </li>
                         <li className="sidebar-item">

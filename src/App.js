@@ -10,6 +10,8 @@ import Content from "./BackOffice/components_template/Content";
 import Acceuil from "./BackOffice/pages_admin/Acceuil";
 import { Navigate } from "react-router-dom";
 import Categorie from "./BackOffice/Categorie";
+import AjoutCategorie from "./BackOffice/AjoutCategorie";
+import Marque from "./BackOffice/Marque";
 
 function App() {
     return (
@@ -24,6 +26,8 @@ function App() {
                 <Route path="/historiques" element={<Histo />} />
                 <Route path="/acceuil" element={<Acceuil contenu={Content} />} />
                 <Route path="/categories" element={<Acceuil contenu={Categorie} />} />
+                <Route path="/ajout_categorie" element={<Acceuil contenu={AjoutCategorie} />} />
+                <Route path="/marques" element={<Acceuil contenu={Marque} />} />
             </Routes>
         </Router>
     );
