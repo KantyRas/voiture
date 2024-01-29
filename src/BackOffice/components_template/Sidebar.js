@@ -62,7 +62,7 @@ export default function Sidebar(){
                         </li>
 
                         <li className="sidebar-item">
-                            <Link className="sidebar-link" to="/" aria-expanded="false">
+                            <Link className="sidebar-link" to="/statistiques" aria-expanded="false">
                         <span>
                   <i className="ti ti-pig-money"></i>
                 </span>
