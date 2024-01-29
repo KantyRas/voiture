@@ -20,7 +20,7 @@ function Register() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:8080/api/auth/register", formData);
+            const response = await axios.post("https://voiture-backend-production.up.railway.app/api/auth/register", formData);
             localStorage.setItem("token", response.data.token);
             //Redirigez l'utilisateur vers une autre page après l'enregistrement réussi, par exemple la page de connexion
             //history.push("/login");
