@@ -14,6 +14,7 @@ import AjoutCategorie from "./BackOffice/AjoutCategorie";
 import Marque from "./BackOffice/Marque";
 import AjoutMarque from "./BackOffice/AjoutMarque";
 import Validation from "./BackOffice/Validation";
+import Stat from "./BackOffice/Stat";
 
 function App() {
     return (
@@ -33,6 +34,7 @@ function App() {
                 <Route path="/ajout_marque" element={<Acceuil contenu={AjoutMarque} />} />
                 <Route path="/marques" element={<Acceuil contenu={Marque} />} />
                 <Route path="/validation" element={<Acceuil contenu={Validation} />} />
+                <Route path="/statistiques" element={<Acceuil contenu={Stat} />} />
             </Routes>
         </Router>
     );
