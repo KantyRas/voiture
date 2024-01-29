@@ -3,7 +3,7 @@ import axios from "axios";
 import {Link} from "react-router-dom";
 
 export default function Marque(){
-    const [marques, setMarques] = useState([]);
+    const [Marques, setMarques] = useState([]);
 
     useEffect(() => {
         const token = localStorage.getItem("token");
@@ -42,7 +42,7 @@ export default function Marque(){
                     </tr>
                     </thead>
                     <tbody>
-                    {marques.map(marque => (
+                    {Marques.map(marque => (
                         <tr key={marque.idmarque}>
                             <th scope="row">{marque.idmarque}</th>
                             <td>{marque.Marque}</td>
